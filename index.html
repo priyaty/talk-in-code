@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talk in code</title>
+    <link rel="stylesheet" href="css/main.css" media="all">
+    <meta name="description" content="Convert any message to Morse Code to share with friends">
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="share-display-block">
+          <!--<a href="https://twitter.com/talkincodeband" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @talkincodeband</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>--><div class="fb-like" data-href="https://www.facebook.com/talkincode/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div><div class="g-plusone" data-size="medium" data-href="https://plus.google.com/112028850530192962164"></div><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="logo-block"><img class="logo-block__img" src="img/logo.png" alt="Talk in code Logo Image"></div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="talk-in-code-app">
+          <!--Heading wrapper-->
+          <div class="talk-in-code-app-heading">
+            <h1 class="big-text talk-in-code-app-heading__head">talk in code</h1><img class="talk-in-code-app-heading__logo" src="img/logo.png" alt="Talk in code Logo Image">
+          </div>
+          <h5 class="sm-label-text talk-in-code-app__brief-info">Translate your message into Morse Code and share it with your friends.</h5>
+          <!--END: Heading wrapper-->
+          <!--Form wrapper-->
+          <form class="talk-in-code-app-form" href="#" novalidate>
+            <div class="field-box">
+              <div class="textarea-wrapper"><a class="reset-field reset-text" href="#"><img class="reset-field__img" src="img/close-icon.png" alt="Reset text image icon"></a>
+                <div class="textarea text-block-area">
+                  <label class="big-text textarea__label label-ele">ENTER YOUR MESSAGE TO BE CODED</label>
+                  <textarea class="big-text textarea__field textarea-box" rows="2"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="cta-wrapper">
+              <button class="base-btn is-disabled convert-text">translate my message to morse code</button>
+              <div class="share-links-wrapper shares-btns"><a class="base-btn share-links-wrapper__link social-btn-link twit-it" href="#" target="_blank">tweet it</a><a class="base-btn share-links-wrapper__link social-btn-link fb-it" href="#" target="_blank">facebook it</a><a class="base-btn share-links-wrapper__link social-btn-link g-it" href="#" target="_blank">g+ it</a></div>
+            </div>
+          </form>
+          <!--END: Form wrapper-->
+        </div>
+      </div>
+    </main>
+    <div id="fb-root"></div>
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
+      (function(d, s, id) {
+      	var js, fjs = d.getElementsByTagName(s)[0];
+      	if (d.getElementById(id)) return;
+      	js = d.createElement(s); js.id = id;
+      	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+      	fjs.parentNode.insertBefore(js, fjs);
+      	}(document, 'script', 'facebook-jssdk'));
+    </script><!--[if IE 8]>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<![endif]-->
+<!--[if gt IE 8]>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<![endif]-->
+<!--[if !IE]>
+<!--><script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script><!-->
+<![endif]-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
